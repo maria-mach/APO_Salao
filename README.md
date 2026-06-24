@@ -1,132 +1,93 @@
-================================================================================
-                 SISTEMA DE GERENCIAMENTO DE SALÃO DE BELEZA
-         Disciplina: APO2 — Algoritmos e Programação Orientada a Objetos II
-================================================================================
+# Sistema de Gerenciamento de Salão de Beleza
 
-  Este documento apresenta as informações necessárias para execução e
-  avaliação do sistema desenvolvido para gerenciamento de um salão de beleza.
+## Sobre o Sistema
 
-================================================================================
-  SOBRE O SISTEMA
-================================================================================
+A aplicação foi desenvolvida com o objetivo de auxiliar no controle das atividades de um salão de beleza, centralizando informações relacionadas a clientes, profissionais, serviços, estoque, pagamentos e agendamentos.
 
-  A aplicação foi desenvolvida com o objetivo de auxiliar no controle das
-  atividades de um salão de beleza, centralizando informações relacionadas a
-  clientes, profissionais, serviços, estoque, pagamentos e agendamentos.
+O projeto foi desenvolvido utilizando Java, banco de dados MySQL e a arquitetura MVC, promovendo a separação entre interface gráfica, regras de negócio e persistência de dados.
 
-  O projeto foi desenvolvido utilizando Java, banco de dados MySQL e a
-  arquitetura MVC, promovendo a separação entre interface gráfica,
-  regras de negócio e persistência de dados.
+## Pré-requisitos
 
-================================================================================
-  PRÉ-REQUISITOS
-================================================================================
+* Java JDK
+* Eclipse IDE
+* MySQL Server
 
-  Antes de iniciar, certifique-se de que os seguintes programas estão
-  instalados e funcionando na máquina:
+## Configuração do Banco de Dados
 
-    [1] Java JDK
+O script de criação do banco encontra-se no arquivo:
 
-    [2] Eclipse IDE
+```text
+bancoAPO.sql
+```
 
-    [3] MySQL Server
+Após a execução do script, a estrutura necessária para utilização do sistema estará disponível.
 
-================================================================================
-  CONFIGURAÇÃO DO BANCO DE DADOS
-================================================================================
+## Execução do Sistema
 
-  O script de criação do banco encontra-se no arquivo:
+1. Importe o projeto no Eclipse.
+2. Configure a biblioteca SWT.
+3. Ajuste os parâmetros de conexão com o banco de dados.
+4. Execute a aplicação pela tela principal do sistema.
 
-       bancoAPO.sql
+## Funcionalidades Disponíveis
 
-  Após a execução do script, a estrutura necessária para utilização do sistema
-  estará disponível.
+* Cadastro de clientes
+* Cadastro de profissionais
+* Cadastro de serviços
+* Controle de estoque
+* Registro de pagamentos
+* Controle de agendamentos
 
-================================================================================
-  EXECUÇÃO DO SISTEMA
-================================================================================
+## Tecnologias Utilizadas
 
-  1. Importe o projeto no Eclipse.
+### Linguagem
 
-  2. Configure a biblioteca SWT.
+* Java
 
-  3. Ajuste os parâmetros de conexão com o banco de dados.
+### Interface Gráfica
 
-  4. Execute a aplicação pela tela principal do sistema.
+* SWT (Standard Widget Toolkit)
+* WindowBuilder
 
-================================================================================
-  FUNCIONALIDADES DISPONÍVEIS
-================================================================================
+### Banco de Dados
 
-    • Cadastro de clientes
-    • Cadastro de profissionais
-    • Cadastro de serviços
-    • Controle de estoque
-    • Registro de pagamentos
-    • Controle de agendamentos
+* MySQL
+* JDBC
 
-================================================================================
-  TECNOLOGIAS UTILIZADAS
-================================================================================
+### Ferramentas
 
-  Linguagem:
-    • Java
+* Eclipse IDE
+* Git
+* GitHub
 
-  Interface Gráfica:
-    • SWT (Standard Widget Toolkit)
-    • WindowBuilder
+## Estrutura do Projeto
 
-  Banco de Dados:
-    • MySQL
-    • JDBC
+```text
+projetoAPO_salao/
+│
+├── APO.pdf
+├── bancoAPO.sql
+├── README.md
+│
+└── src
+    ├── banco
+    ├── controller
+    ├── dao
+    ├── model
+    └── view
+```
 
-  Ferramentas:
-    • Eclipse IDE
-    • Git
-    • GitHub
+## Arquivos Disponíveis
 
-================================================================================
-  ESTRUTURA DO PROJETO
-================================================================================
+### APO.pdf
 
-  /projetoAPO_salao/
+Documentação do projeto.
 
-    README.txt
-    APO.pdf
-    bancoAPO.sql
+### bancoAPO.sql
 
-    /src
+Script de criação do banco de dados.
 
-      /banco
-        Classes de conexão com o banco de dados
+## Autores
 
-      /controller
-        Controle das ações do sistema
-
-      /dao
-        Operações de persistência de dados
-
-      /model
-        Entidades e regras de negócio
-
-      /view
-        Interfaces gráficas da aplicação
-
-================================================================================
-  ARQUIVOS DISPONÍVEIS
-================================================================================
-
-    APO.pdf
-      Documentação do projeto
-
-    bancoAPO.sql
-      Script de criação do banco de dados
-
-================================================================================
-  AUTORES
-================================================================================
-
-    • Maria Eduarda
-    • Halan William
-
-================================================================================
+* Maria Eduarda
+* Halan William
