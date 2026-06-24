@@ -1,45 +1,122 @@
-# APO Salão
+================================================================================ SISTEMA DE GERENCIAMENTO DE SALÃO DE BELEZA Disciplina: APO2 – Algoritmos e Programação Orientada a Objetos II
 
-Projeto desenvolvido em Java com o objetivo de auxiliar na gestão de um salão de beleza.
+Este documento contém as informações necessárias para execução e avaliação
+do sistema desenvolvido para gerenciamento de um salão de beleza.
 
-O sistema permite o cadastro e gerenciamento de clientes, profissionais, serviços, agendamentos, estoque e pagamentos, reunindo em uma única aplicação funcionalidades importantes para a organização do negócio.
+Antes de iniciar, certifique-se de que os seguintes programas estão
+instalados e funcionando na máquina:
 
-## Funcionalidades
+[1] JDK 21 ou superior
+    Verificar: abra o terminal e digite → java -version
 
-* Cadastro de clientes
-* Cadastro de profissionais
-* Cadastro de serviços
-* Controle de estoque
-* Agendamento de atendimentos
-* Registro de pagamentos
+[2] Eclipse IDE
+    Ambiente utilizado para desenvolvimento e execução do projeto
 
-## Tecnologias utilizadas
+[3] MySQL Server 8.0 ou superior
+    Verificar: abra o terminal e digite → mysql --version
+Inicie o MySQL Server.
+Crie um banco de dados para o sistema.
 
-* Java
-* SWT
-* Eclipse
-* WindowBuilder
-* JDBC
-* MySQL
-* Git/GitHub
+Execute o script:
 
-## Estrutura do projeto
+bancoAPO.sql
 
-O projeto foi organizado utilizando o padrão MVC, separando as responsabilidades entre as camadas de interface, controle e acesso aos dados.
+Este script criará as tabelas necessárias para o funcionamento do sistema.
 
-```text
+Abra a classe responsável pela conexão:
+
+   src/banco/DBConnection.java
+
+Ajuste os parâmetros de conexão de acordo com a configuração local:
+
+   URL do banco
+   Usuário
+   Senha
+
+Salve as alterações.
+
+Importe o projeto no Eclipse.
+Certifique-se de que a biblioteca SWT está configurada.
+Execute a tela inicial do sistema.
+
+O sistema será iniciado e estará pronto para utilização.
+
+CLIENTES
+
+• Cadastro de clientes
+• Consulta de clientes
+
+SERVIÇOS
+
+• Cadastro de serviços
+• Consulta de serviços
+
+PROFISSIONAIS
+
+• Cadastro de prestadores
+• Consulta de profissionais
+
+AGENDAMENTOS
+
+• Registro de atendimentos
+• Consulta de agendamentos
+
+ESTOQUE
+
+• Cadastro de produtos
+• Controle de estoque
+
+PAGAMENTOS
+
+• Registro de pagamentos
+• Controle financeiro
+
+Linguagem:
+
+• Java
+
+Interface Gráfica:
+
+• SWT (Standard Widget Toolkit)
+• WindowBuilder
+
+Banco de Dados:
+
+• MySQL
+• JDBC
+
+Ferramentas:
+
+• Eclipse IDE
+• Git
+• GitHub
+
 src/
-├── banco
-├── controller
-├── dao
-├── model
-└── view
-```
 
-## O que aprendi
+/banco
+  Conexão com banco de dados
 
-Durante o desenvolvimento deste projeto tive contato com conceitos de orientação a objetos, integração com banco de dados, arquitetura MVC e desenvolvimento de interfaces gráficas utilizando Java.
+/controller
+  Controle das ações do sistema
 
-## Observação
+/dao
+  Operações de persistência
 
-Este projeto foi desenvolvido para fins acadêmicos e de aprendizado.
+/model
+  Entidades e regras de negócio
+
+/view
+  Interfaces gráficas
+bancoAPO.sql
+  Script de criação do banco de dados
+
+APO.pdf
+  Documentação do projeto
+• Maria Eduarda
+• Halan William
+
+Projeto desenvolvido para fins acadêmicos com o objetivo de aplicar
+conceitos de Programação Orientada a Objetos, arquitetura MVC,
+persistência de dados e desenvolvimento de interfaces gráficas em Java.
+
+================================================================================
