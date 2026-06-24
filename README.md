@@ -1,122 +1,132 @@
-SISTEMA DE GERENCIAMENTO DE SALÃO DE BELEZA 
+================================================================================
+                 SISTEMA DE GERENCIAMENTO DE SALÃO DE BELEZA
+         Disciplina: APO2 — Algoritmos e Programação Orientada a Objetos II
+================================================================================
 
-Este documento contém as informações necessárias para execução e avaliação
-do sistema desenvolvido para gerenciamento de um salão de beleza.
+  Este documento apresenta as informações necessárias para execução e
+  avaliação do sistema desenvolvido para gerenciamento de um salão de beleza.
 
-Antes de iniciar, certifique-se de que os seguintes programas estão
-instalados e funcionando na máquina:
+================================================================================
+  SOBRE O SISTEMA
+================================================================================
 
-[1] JDK 21 ou superior
-    Verificar: abra o terminal e digite → java -version
+  A aplicação foi desenvolvida com o objetivo de auxiliar no controle das
+  atividades de um salão de beleza, centralizando informações relacionadas a
+  clientes, profissionais, serviços, estoque, pagamentos e agendamentos.
 
-[2] Eclipse IDE
-    Ambiente utilizado para desenvolvimento e execução do projeto
+  O projeto foi desenvolvido utilizando Java, banco de dados MySQL e a
+  arquitetura MVC, promovendo a separação entre interface gráfica,
+  regras de negócio e persistência de dados.
 
-[3] MySQL Server 8.0 ou superior
-    Verificar: abra o terminal e digite → mysql --version
-Inicie o MySQL Server.
-Crie um banco de dados para o sistema.
+================================================================================
+  PRÉ-REQUISITOS
+================================================================================
 
-Execute o script:
+  Antes de iniciar, certifique-se de que os seguintes programas estão
+  instalados e funcionando na máquina:
 
-bancoAPO.sql
+    [1] Java JDK
 
-Este script criará as tabelas necessárias para o funcionamento do sistema.
+    [2] Eclipse IDE
 
-Abra a classe responsável pela conexão:
+    [3] MySQL Server
 
-   src/banco/DBConnection.java
+================================================================================
+  CONFIGURAÇÃO DO BANCO DE DADOS
+================================================================================
 
-Ajuste os parâmetros de conexão de acordo com a configuração local:
+  O script de criação do banco encontra-se no arquivo:
 
-   URL do banco
-   Usuário
-   Senha
+       bancoAPO.sql
 
-Salve as alterações.
+  Após a execução do script, a estrutura necessária para utilização do sistema
+  estará disponível.
 
-Importe o projeto no Eclipse.
-Certifique-se de que a biblioteca SWT está configurada.
-Execute a tela inicial do sistema.
+================================================================================
+  EXECUÇÃO DO SISTEMA
+================================================================================
 
-O sistema será iniciado e estará pronto para utilização.
+  1. Importe o projeto no Eclipse.
 
-CLIENTES
+  2. Configure a biblioteca SWT.
 
-• Cadastro de clientes
-• Consulta de clientes
+  3. Ajuste os parâmetros de conexão com o banco de dados.
 
-SERVIÇOS
+  4. Execute a aplicação pela tela principal do sistema.
 
-• Cadastro de serviços
-• Consulta de serviços
+================================================================================
+  FUNCIONALIDADES DISPONÍVEIS
+================================================================================
 
-PROFISSIONAIS
+    • Cadastro de clientes
+    • Cadastro de profissionais
+    • Cadastro de serviços
+    • Controle de estoque
+    • Registro de pagamentos
+    • Controle de agendamentos
 
-• Cadastro de prestadores
-• Consulta de profissionais
+================================================================================
+  TECNOLOGIAS UTILIZADAS
+================================================================================
 
-AGENDAMENTOS
+  Linguagem:
+    • Java
 
-• Registro de atendimentos
-• Consulta de agendamentos
+  Interface Gráfica:
+    • SWT (Standard Widget Toolkit)
+    • WindowBuilder
 
-ESTOQUE
+  Banco de Dados:
+    • MySQL
+    • JDBC
 
-• Cadastro de produtos
-• Controle de estoque
+  Ferramentas:
+    • Eclipse IDE
+    • Git
+    • GitHub
 
-PAGAMENTOS
+================================================================================
+  ESTRUTURA DO PROJETO
+================================================================================
 
-• Registro de pagamentos
-• Controle financeiro
+  /projetoAPO_salao/
 
-Linguagem:
+    README.txt
+    APO.pdf
+    bancoAPO.sql
 
-• Java
+    /src
 
-Interface Gráfica:
+      /banco
+        Classes de conexão com o banco de dados
 
-• SWT (Standard Widget Toolkit)
-• WindowBuilder
+      /controller
+        Controle das ações do sistema
 
-Banco de Dados:
+      /dao
+        Operações de persistência de dados
 
-• MySQL
-• JDBC
+      /model
+        Entidades e regras de negócio
 
-Ferramentas:
+      /view
+        Interfaces gráficas da aplicação
 
-• Eclipse IDE
-• Git
-• GitHub
+================================================================================
+  ARQUIVOS DISPONÍVEIS
+================================================================================
 
-src/
+    APO.pdf
+      Documentação do projeto
 
-/banco
-  Conexão com banco de dados
+    bancoAPO.sql
+      Script de criação do banco de dados
 
-/controller
-  Controle das ações do sistema
+================================================================================
+  AUTORES
+================================================================================
 
-/dao
-  Operações de persistência
-
-/model
-  Entidades e regras de negócio
-
-/view
-  Interfaces gráficas
-bancoAPO.sql
-  Script de criação do banco de dados
-
-APO.pdf
-  Documentação do projeto
-• Maria Eduarda
-• Halan William
-
-Projeto desenvolvido para fins acadêmicos com o objetivo de aplicar
-conceitos de Programação Orientada a Objetos, arquitetura MVC,
-persistência de dados e desenvolvimento de interfaces gráficas em Java.
+    • Maria Eduarda
+    • Halan William
 
 ================================================================================
