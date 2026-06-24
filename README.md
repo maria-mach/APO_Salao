@@ -1,4 +1,4 @@
-================================================================================ SISTEMA DE GERENCIAMENTO DE SALÃO DE BELEZA Disciplina: APO2 – Algoritmos e Programação Orientada a Objetos II
+SISTEMA DE GERENCIAMENTO DE SALÃO DE BELEZA Disciplina
 
 Este documento contém as informações necessárias para execução e avaliação
 do sistema desenvolvido para gerenciamento de um salão de beleza.
